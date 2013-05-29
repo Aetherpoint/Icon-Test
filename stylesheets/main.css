@@ -1,0 +1,26 @@
+h1 {
+	font-style: monospace;
+	font-family: Monaco, Courier;
+	font-weight: normal;
+}
+
+body {
+	background-color: #fefefe;
+	color: #333;
+	font-family: Monaco, Courier;
+	margin: 0;
+}
+header {
+
+}
+
+.detects {
+	border: solid 1px #fff;
+	background-color: #fafafa;
+}
+
+.icon-test {
+	margin: 2em 0 2em 0;
+	border-top: solid 1px #f1f1f1;
+	border-bottom: solid 1px #f1f1f1;
+}

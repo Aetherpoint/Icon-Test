@@ -1,0 +1,15 @@
+{
+  "name": "icontest",
+  "version": "0.0.0",
+  "description": "Testing for icon delivery",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aetherpoint/Icon-Test.git"
+  },
+  "author": "Andrew Johnson",
+  "license": "BSD"
+}

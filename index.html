@@ -8,23 +8,71 @@
     <meta name="author" content="Andrew Johnson">
 
         <link href="stylesheets/main.css" type="text/css" rel="stylesheet" media="all">
-
+        <link rel="stylesheet" href="style.css" media="all" />
         <script src="javascripts/modernizr.custom.02638.js"></script>
+
+        <!-- Unicode CSS Loader: place this in the head of your page -->
+        <script>
+        /* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+        window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!!t.document.createElementNS&&!!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect,A=function(A){var o=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];o.rel="stylesheet",o.href=e[A&&n?0:A?1:2],r.parentNode.insertBefore(o,r)},o=new t.Image;o.onerror=function(){A(!1)},o.onload=function(){A(1===o.width&&1===o.height)},o.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+        grunticon( [ "/stylesheets/icons/icons.data.svg.css", "/stylesheets/icons/icons.data.png.css", "/stylesheets/icons/icons.fallback.css" ] );</script>
+        <noscript><link href="/stylesheets/icons/icons.fallback.css" rel="stylesheet"></noscript>
 
   </head>
   <body>
-    <header>
-    <h1>Icon Test</h1>
-    </header>
+    <div class="container">
+      <header>
+      <h1>Icon Test</h1>
+      </header>
 
-    <section class="detects">
-    Detection
-    </section>
+      <section class="detects">
+      <p>A compatibility test with svg vs. icon font based techniques.</p>
+      <a href="http://dfcb.github.io/iconfont-fallback/demo.html">Icon Font Fallback</a>
+      </section>
 
-    <div class="icon-test">
+      <section class="detects">
+      <p>Modernizer Feature Detections:</p>
+
+      <li class="javascript-supported">Javascript is Supported</li>
+      <li class="svg-supported">SVG is Supported</li>
+      <li class="fontface-supported">Fontface is Supported</li>
+      </section>
+
+      <div class="icon-test">
+
+        <div class="grunticon-test test-block">
+          <p><a href="https://github.com/filamentgroup/grunticon">Grunticon (SVG)</a></p>
+          <div class="icon-mobile" style="width: 52.357px; height: 54px"></div>
+          <div class="icon-tablet" style="width: 52.357px; height: 54px"></div>
+          <div class="icon-desktop" style="width: 52.357px; height: 54px"></div>
+        </div>
+
+       <!--  <div class="icon-Untitled-2-02" style="width: 93.6px; height: 78px"></div>
+        <div class="icon-Untitled-2-03" style="width: 97px; height: 78px"></div> -->
+
+        <div class="font-test test-block">
+          <p><a href="http://icomoon.io/">Icon Moon (Font)</a></p>
+          <div class="font-icon">&#xe002;</div>
+
+          <div class="font-icon">&#xe001;</div>
       
+          <div class="font-icon">&#xe000;</div>
+        </div>
+
+        <div class="font-test test-block">
+          <p><a href="http://icomoon.io/">Icon Moon (Font) with Content Attribute</a></p>
+          <div class="fs1" aria-hidden="true" data-icon="&#xe002;"></div>
+
+          <div class="fs1" aria-hidden="true" data-icon="&#xe001;"></div>
+      
+          <div class="fs1" aria-hidden="true" data-icon="&#xe000;"></div>
+        </div>
+
+      </div>
+
+      <footer>Test by <a href="http://aetherpoint.com/">Andrew J</a> @ <a href="http://filamentgroup.com/">Filament Group</a>
+    </footer>
     </div>
-
-
+  
   </body>
 </html>

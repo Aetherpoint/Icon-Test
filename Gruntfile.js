@@ -8,8 +8,8 @@ module.exports = function(grunt) {
 	grunticon: {
 		myIcons: {
 			options: {
-			src: "css/dist/icons/",
-			dest: "css/icons/"
+			src: "images/icons/",
+			dest: "stylesheets/icons/"
 			}
 		}
     },
